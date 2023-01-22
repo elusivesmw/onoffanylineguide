@@ -64,102 +64,102 @@ autoclean JML LineGuideActFix
 
 freecode
 
-!map16page = $10						; page with custom on/off tiles
-; see readme for instructions on how to modify these tables
+!map16page = $10							; page with custom on/off tiles
 
+; see readme for instructions on how to modify these tables
 OnTable:
-db $00,$00,$00,$00,$00,$00,$00,$00,$00,$8C,$8D,$00,$88,$25,$91,$90 		; 00-0F \ diagonals, verticals ON
-db $00,$00,$00,$00,$00,$00,$00,$00,$00,$25,$25,$00,$8A,$25,$25,$25 		; 10-1F / diagonals, verticals OFF
-db $00,$00,$00,$00,$00,$00,$00,$00,$00,$25,$25,$25,$25,$89,$93,$25 		; 20-2F \ diagonals, horizontals OFF
-db $00,$00,$00,$00,$00,$00,$00,$00,$00,$8E,$8F,$87,$25,$8B,$92,$25 		; 30-3F / diagonals, horizontals ON
-db $00,$00,$00,$00,$00,$00,$00,$00,$7A,$7B,$7E,$7F,$25,$25,$25,$25 		; 40-4F \ 
-db $00,$00,$00,$00,$00,$00,$00,$00,$7C,$76,$77,$7D,$25,$25,$25,$25 		; 50-5F | circles ON, circles OFF
-db $00,$00,$00,$00,$00,$00,$00,$00,$82,$78,$79,$83,$25,$25,$25,$25 		; 60-6F | 
-db $00,$00,$00,$00,$00,$00,$00,$00,$80,$81,$84,$85,$25,$25,$25,$25 		; 70-7F / 
-db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 		; 80-8F \ 
-db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 		; 90-9F | 
-db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 		; A0-AF | 
-db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 		; B0-BF | unused rows
-db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 		; C0-CF | 
-db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 		; D0-DF | 
-db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 		; E0-EF | 
-db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 		; F0-FF /
+db $00,$00,$00,$00,$00,$00,$00,$00,$00,$8C,$8D,$00,$88,$25,$91,$90 	; 00-0F \ diagonals, verticals ON
+db $00,$00,$00,$00,$00,$00,$00,$00,$00,$25,$25,$00,$8A,$25,$25,$25 	; 10-1F / diagonals, verticals OFF
+db $00,$00,$00,$00,$00,$00,$00,$00,$00,$25,$25,$25,$25,$89,$93,$25 	; 20-2F \ diagonals, horizontals OFF
+db $00,$00,$00,$00,$00,$00,$00,$00,$00,$8E,$8F,$87,$25,$8B,$92,$25 	; 30-3F / diagonals, horizontals ON
+db $00,$00,$00,$00,$00,$00,$00,$00,$7A,$7B,$7E,$7F,$25,$25,$25,$25 	; 40-4F \ 
+db $00,$00,$00,$00,$00,$00,$00,$00,$7C,$76,$77,$7D,$25,$25,$25,$25 	; 50-5F | circles ON, circles OFF
+db $00,$00,$00,$00,$00,$00,$00,$00,$82,$78,$79,$83,$25,$25,$25,$25 	; 60-6F | 
+db $00,$00,$00,$00,$00,$00,$00,$00,$80,$81,$84,$85,$25,$25,$25,$25 	; 70-7F / 
+db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 	; 80-8F \ 
+db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 	; 90-9F | 
+db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 	; A0-AF | 
+db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 	; B0-BF | unused rows
+db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 	; C0-CF | 
+db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 	; D0-DF | 
+db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 	; E0-EF | 
+db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 	; F0-FF /
 
 
 OffTable:
-db $00,$00,$00,$00,$00,$00,$00,$00,$00,$25,$25,$00,$25,$88,$25,$25 		; 00-0F \ diagonals, verticals OFF
-db $00,$00,$00,$00,$00,$00,$00,$00,$00,$8E,$8F,$00,$25,$8A,$91,$90 		; 10-1F / diagonals, verticals ON
-db $00,$00,$00,$00,$00,$00,$00,$00,$00,$8C,$8D,$86,$89,$25,$25,$93 		; 20-2F \ diagonals, horizontals ON
-db $00,$00,$00,$00,$00,$00,$00,$00,$00,$25,$25,$25,$8B,$25,$25,$92 		; 30-3F / diagonals, horizontals OFF
-db $00,$00,$00,$00,$00,$00,$00,$00,$25,$25,$25,$25,$7A,$7B,$7E,$7F 		; 40-4F \ 
-db $00,$00,$00,$00,$00,$00,$00,$00,$25,$25,$25,$25,$7C,$76,$77,$7D 		; 50-5F | circles OFF, circles ON
-db $00,$00,$00,$00,$00,$00,$00,$00,$25,$25,$25,$25,$82,$78,$79,$83 		; 60-6F | 
-db $00,$00,$00,$00,$00,$00,$00,$00,$25,$25,$25,$25,$80,$81,$84,$85 		; 70-7F / 
-db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 		; 80-8F \ 
-db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 		; 90-9F | 
-db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 		; A0-AF | 
-db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 		; B0-BF | unused rows
-db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 		; C0-CF | 
-db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 		; D0-DF | 
-db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 		; E0-EF | 
-db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 		; F0-FF /
+db $00,$00,$00,$00,$00,$00,$00,$00,$00,$25,$25,$00,$25,$88,$25,$25 	; 00-0F \ diagonals, verticals OFF
+db $00,$00,$00,$00,$00,$00,$00,$00,$00,$8E,$8F,$00,$25,$8A,$91,$90 	; 10-1F / diagonals, verticals ON
+db $00,$00,$00,$00,$00,$00,$00,$00,$00,$8C,$8D,$86,$89,$25,$25,$93 	; 20-2F \ diagonals, horizontals ON
+db $00,$00,$00,$00,$00,$00,$00,$00,$00,$25,$25,$25,$8B,$25,$25,$92 	; 30-3F / diagonals, horizontals OFF
+db $00,$00,$00,$00,$00,$00,$00,$00,$25,$25,$25,$25,$7A,$7B,$7E,$7F 	; 40-4F \ 
+db $00,$00,$00,$00,$00,$00,$00,$00,$25,$25,$25,$25,$7C,$76,$77,$7D 	; 50-5F | circles OFF, circles ON
+db $00,$00,$00,$00,$00,$00,$00,$00,$25,$25,$25,$25,$82,$78,$79,$83 	; 60-6F | 
+db $00,$00,$00,$00,$00,$00,$00,$00,$25,$25,$25,$25,$80,$81,$84,$85 	; 70-7F / 
+db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 	; 80-8F \ 
+db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 	; 90-9F | 
+db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 	; A0-AF | 
+db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 	; B0-BF | unused rows
+db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 	; C0-CF | 
+db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 	; D0-DF | 
+db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 	; E0-EF | 
+db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00 	; F0-FF /
 
 
 LineGuideActFix:
 	CMP #$80 							;\ A is high byte of map16 tile (from $01D997)
-	BCS .reject 						;/ if page is $80 and up, background tiles, reject.
+	BCS .reject 							;/ if page is $80 and up, background tiles, reject.
 
 .loop
-	CMP #!map16page						;\ only check one page
-	BNE .wrongPage 						;/ 
+	CMP #!map16page							;\ only check one page
+	BNE .wrongPage 							;/ 
 
 	XBA 								;\ map16 tile
-	LDA $1693|!addr 					;/ 
+	LDA $1693|!addr 						;/ 
 
 	PHX 								;\ 
 	TAX 								;| use map16 low byte as index
-	LDA.l OnTable,x 					;| to see if on/off tables have a non $00 value
+	LDA.l OnTable,x 						;| to see if on/off tables have a non $00 value
 	PLX 								;| 
 	CMP #$00 							;| 
 	BNE .found 							;| if value found, check state
-	BRA .notFound 						;/ else, try to resolve act as
+	BRA .notFound 							;/ else, try to resolve act as
 
 	.wrongPage
 	XBA 								;> high byte of map16 number
 	.notFound
-	LDA $1693|!addr 					;\ map16 tile
+	LDA $1693|!addr 						;\ map16 tile
 	REP #$20 							;/ 
 
 	ASL 								;\ 
-	ADC $06F624|!bank 					;| 
+	ADC $06F624|!bank 						;| 
 	STA $0D 							;| 
 	SEP #$20 							;| 
-	LDA $06F626|!bank 					;| get the map16 tile's true act as setting address high byte
+	LDA $06F626|!bank 						;| get the map16 tile's true act as setting address high byte
 	STA $0F 							;| 
 	REP #$20							;| 
 	LDA [$0D] 							;| 
 	SEP #$20							;| 
-	STA $1693|!addr 					;| 
+	STA $1693|!addr 						;| 
 	XBA 								;| 
-	BRA .checkPage 						;/ 
+	BRA .checkPage 							;/ 
 
 	.found
-	LDA $1693|!addr 					;\ 
+	LDA $1693|!addr 						;\ 
 	PHX 								;| 
 	TAX 								;| check on/off switch and load value from respective table
-	LDA $14AF|!addr						;| 
+	LDA $14AF|!addr							;| 
 	BNE .off							;/ 
 
 	.on
-	LDA.l OnTable,x 					;\ switch in on state, get value at index
+	LDA.l OnTable,x 						;\ switch in on state, get value at index
 	BRA .save 							;/ 
 	
 	.off 
-	LDA.l OffTable,x 					;> switch in off state, get value at index
+	LDA.l OffTable,x 						;> switch in off state, get value at index
 
 	.save
 	PLX 								;\ 
-	STA $1693|!addr 					;| store custom low byte map16, i.e. the act as for this tile in current switch state
+	STA $1693|!addr 						;| store custom low byte map16, i.e. the act as for this tile in current switch state
 	LDA #$00 							;| fake page $00
 	BRA .cont 							;/ skip check page since we know its $00
 	
